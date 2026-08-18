@@ -92,8 +92,7 @@ async function makeVideo(){
   btn.innerText = "⏳ ویڈیو بن رہی ہے... 40 سیکنڈ";
   document.getElementById('result').innerHTML = '<p class="loader">برائے مہربانی ویٹ کریں...</p>';
   
-  let url = `https://pollinations.ai/video/` + encodeURIComponent(p);
-  
+  let url = `https://image.pollinations.ai/prompt/` + encodeURIComponent(p + " video, 5 seconds, cinematic") + `?nologo=true`;
   setTimeout(() => {
     document.getElementById('result').innerHTML = `
       <p style="color:#00ff88;font-size:18px">✅ ویڈیو تیار ہے!</p>
